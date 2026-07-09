@@ -1,0 +1,26 @@
+VERITY
+
+Mission:
+Help people make trusted decisions using evidence instead of influencer opinions.
+
+Vision:
+Become the world's most trusted platform for verifying online claims.
+
+Target Users:
+- Gym enthusiasts
+- Nutrition learners
+- Skincare users
+
+Problem:
+People are confused because influencers give conflicting advice.
+
+Solution:
+An AI-powered trust engine that verifies claims using scientific evidence and trusted sources.
+
+Version 1 (MVP):
+- Analyze fitness claims
+- Analyze nutrition claims
+- Analyze skincare claims
+- Show confidence score
+- Show research sources
+- Give a simple verdict
