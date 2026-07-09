@@ -47,10 +47,38 @@ elif choice == "3":
 else:
     print("Invalid choice. Please select 1, 2, or 3.")
 claim = input("\nEnter your claim...")
-print("Claim:",claim)
-print("Status: AI Analysis Coming soon...")
+
+def analyze_claim(claim):
+
+    print("\n===================================")
+    print("        VERITY AI ANALYSIS         ")
+    print("===================================")
+
+    claim = claim.lower()
+    
+    if "protein" in claim  or "creatine" in claim :
+        print("Category: Nutrition🥗")
+        print("Result: Needs scientific evidence.")
+        print("Confidence: 75%")
+
+    elif "gym" in claim:
+        print("Category:Fitness")
+        print("Result: This claim may be true depending on the context.")
+        print("Confidence: 70%")
+
+    elif "skin" in claim:
+        print("Category: Skincare🌟")
+        print("Result: Consult trusted dermatology sources.")
+        print("Confidence: 72%")
+    
+    else:
+        print("Category: Unknown")
+        print("Result: No analysis available yet.")
+        print("Confidence: 0%")
+
+print("====================================")
+
+analyze_claim(claim)
 goodbye()
 
-
-   
-    
+        
