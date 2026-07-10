@@ -1,0 +1,36 @@
+{
+    "creatine": {
+        "category": "Nutrition",
+        "result": "Creatine is one of the most researched supplements.",
+        "confidence": "95%"
+    },
+
+    "protein": {
+        "category": "Nutrition",
+        "result": "Protein helps build and repair muscles.",
+        "confidence": "96%"
+    },
+
+    "gym": {
+        "category": "Fitness",
+        "result": "Gym does not stop height growth.",
+        "confidence": "92%"
+    },
+
+    "mass gainer": {
+    "category": "Nutrition",
+    "result": "Mass gainer helps increase calories and weight when combined with proper training and diet.",
+    "confidence": "90%"
+},
+
+"height": {
+    "category": "Fitness",
+    "result": "Gym does not stop height growth in healthy individuals.",
+    "confidence": "88%"
+}
+
+
+}
+
+
+

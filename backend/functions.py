@@ -1,3 +1,6 @@
+from ai import analyze_claim
+from utils import heading
+
 def welcome():
     print("====================================")
     print("      Welcome to Verity 🚀")
@@ -48,47 +51,15 @@ else:
     print("Invalid choice. Please select 1, 2, or 3.")
 claim = input("\nEnter your claim...")
 
-def analyze_claim(claim):
+result = analyze_claim(claim)
 
-    print("\n===================================")
-    print("        VERITY AI ANALYSIS         ")
-    print("===================================")
+heading("VERITY AI ANALYSIS")
 
-    claim = claim.lower()
+if result:
+    print(f"Category: {result['category']}")
+    print(f"Result: {result['result']}")
+    print(f"Confidence: {result['confidence']}")
+else:
+    print("No result found.")
     
-    if "protein" in claim  or "creatine" in claim :
-        print("Category: Nutrition🥗")
-        print("Result: Needs scientific evidence.")
-        print("Confidence: 75%")
-
-    elif "gym" in claim or "workout" in claim:
-        print("Category:Fitness")
-        print("Result: This claim may be true depending on the context.")
-        print("Confidence: 70%")
-
-    elif "skin" in claim or "facewash" in claim or "serum" in claim:
-        print("Category: Skincare🌟")
-        print("Result: Consult trusted dermatology sources.")
-        print("Confidence: 72%")
-
-    elif "height" in claim:
-        print("Category: Fitness💪")
-        print("Result: Gym does not stop height growth in healthy individuals.")
-        print("Confidence: 88%")
-    
-    elif "water" in claim:
-        print("Category: Health💧")
-        print("Result: Staying hydrated supports overall health")
-        print("Confidence: 95%")
-        
-    else:
-        print("Category: Unknown")
-        print("Result: No analysis available yet.")
-        print("Confidence: 0%")
-
-print("====================================")
-
-analyze_claim(claim)
-goodbye()
-
         
