@@ -61,16 +61,26 @@ def analyze_claim(claim):
         print("Result: Needs scientific evidence.")
         print("Confidence: 75%")
 
-    elif "gym" in claim:
+    elif "gym" in claim or "workout" in claim:
         print("Category:Fitness")
         print("Result: This claim may be true depending on the context.")
         print("Confidence: 70%")
 
-    elif "skin" in claim:
+    elif "skin" in claim or "facewash" in claim or "serum" in claim:
         print("Category: Skincare🌟")
         print("Result: Consult trusted dermatology sources.")
         print("Confidence: 72%")
+
+    elif "height" in claim:
+        print("Category: Fitness💪")
+        print("Result: Gym does not stop height growth in healthy individuals.")
+        print("Confidence: 88%")
     
+    elif "water" in claim:
+        print("Category: Health💧")
+        print("Result: Staying hydrated supports overall health")
+        print("Confidence: 95%")
+        
     else:
         print("Category: Unknown")
         print("Result: No analysis available yet.")
