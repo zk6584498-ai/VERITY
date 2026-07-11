@@ -6,7 +6,9 @@ def analyze_claim(claim):
 
     claim = claim.lower()
 
-    if claim in knowledge:
-        return knowledge[claim]
+    for keyword in knowledge:
+        if keyword in claim:
+            return knowledge[keyword]
 
     return None
+
